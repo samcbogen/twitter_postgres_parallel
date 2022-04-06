@@ -11,7 +11,7 @@ services:
       - POSTGRES_PASSWORD=pass
       - PGUSER=postgres
     ports:
-      - 696969:5432
+      - 11165:5432
 
   pg_normalized:
     build: services/pg_normalized
@@ -23,7 +23,7 @@ services:
       - POSTGRES_PASSWORD=pass
       - PGUSER=postgres
     ports:
-      - 696967:5432
+      - 21165:5432
 
   pg_normalized_batch:
     build: services/pg_normalized_batch
@@ -35,7 +35,7 @@ services:
       - POSTGRES_PASSWORD=pass
       - PGUSER=postgres
     ports:
-      - 696968:5432
+      - 31165:5432
 
 volumes:
     pg_normalized:
